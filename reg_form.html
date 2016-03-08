@@ -1,0 +1,157 @@
+<html>
+<head>
+<title>Registration form</title>
+<script src="jquery.min.js"></script>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+<style>
+body{
+    margin:0;
+    background-color: #31454f;
+}
+    #hd{
+        background-color: #3da2ce;
+        width: 100%;
+        height: 10%;
+        position: relative;
+        box-shadow: 0px 5px #2c89b7;
+
+    }
+    #ft{
+        background-color: Black;
+        bottom: 0px;
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        padding-bottom: 3px;
+
+    }
+    #wlcm{
+        background-color: OrangeRed ;
+        border-radius: 4px;
+        height: 50px;
+        margin: 4% 40% 0 40%;
+        position: relative;
+    }
+    #user{
+        background-color: White;
+        border-radius: 2px;
+        position: relative;
+        height: 280px;
+        margin: 2% 40% 0 40%;
+        
+    }
+    #user{
+        height: 280px;
+    }
+    .button{align-items: center;
+        cursor: pointer;
+        background-color: ForestGreen;
+        color: White;
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        border: 4px solid ForestGreen;
+        float: left;
+    }
+    .button:hover{
+        background-color: White;
+        color:black;
+    }
+        .button:active{
+        background-color: White;
+        color:black;
+    }
+    hr{ border: 0 none;
+        height: 1px;
+        width: 90%;
+        background-color: #dcdcdc;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #inpt{
+        width: 87%;
+        height: 30px;
+        font-size: 15px;
+        border:none;
+        margin-left: 15px;
+    }
+   .b1{
+    margin: 15px 0 0 15px;
+   } 
+   .b2{
+    margin: 15px 15px 0 0;
+   }
+   .b3{ 
+    border-radius: 1px;
+    margin:9px 15px 0 15px;
+    align-items: center;
+        cursor: pointer;
+        background-color: White;
+        color: #4a4d4a;
+        font-size: 18px;
+        font-family: Calibri;
+        display: inline-block;
+        width: 90%;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+   }
+ #s1{
+    font-size: 18px;
+    color: #063c57;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 90px;
+    width: 70px;
+ }   
+ #check{
+    margin-left: 15px; 
+    font-size:20px;
+ }
+</style>
+</head>
+<body>
+<div id="hd">
+    <h1 style="color: white; font-family: calibri; margin-left: 200px; padding-top: 15px; "><b>INNORAFT</b>
+    <span style="margin-left: 160px"><a href=""><img src="1457438900_arrow-left-01.png"height="20px" width="20px" ></a></span>
+    <span id="s1">Registration Form</span>
+    <span style=" padding-left:0; margin-left: 0px; margin-top:15px "><a href="" id="arrw"><img src="1457443021_icon-arrow-down-b.png"  height="20px" width="20px" ></a></span>
+    <span style="margin-left: 50px"><a href="login.html"><img src="1457438874_arrow-right-01.png"height="20px" width="20px" ></a></span>
+    <span style="margin-left: 10%
+    "> <img src="Twitter_logo_white.png" style="width: 20px; height: 20px"> </span>
+    <span style="margin-left: 2%; font-family: calibri; font-size: 30px;"><b>f</b></span>
+    <span style="margin-left: 2%"> <img src="wifi-256.png" style="width: 20px; height: 20px"> </span>
+    <span style="margin-left: 2%"> <img src="Mail.png" style="width: 40px; height: 20px"> </span></h1>
+  
+</div> 
+<div id="wlcm">
+    <center><h3 style="color: white; font-family: Calibri; padding-top: 15px">Welcome</h3></center>
+</div>
+<div id="user"> <form>  
+ <button id="f" class="button b1" onclick="change()">Female</button> 
+ <button id="m" class="button b2" onclick="change1()">Male</button>
+ <input id="inpt" type="email" name="email" autofocus placeholder="Email address" style="margin-top: 30px;"></input>
+ <hr>
+  <input id="inpt" type="password" name="password" placeholder="Password"></input>
+<hr></br>
+<input id="check" type="checkbox" name="checkbox"><span style="font-size: 12px; color: Gray;">I have read all terms and conditions.</span></input></br>
+<button class="b3"><b>Create Account</b></button>
+ </form>
+</div>
+ <footer id="ft">
+     <center><h4 style="color: white; font-family: Calibri;">Copyright @2015</h4></center>
+ </footer>   
+<script>
+    function change()
+    {
+ 
+    document.getElementById("m").style.backgroundColor="#ffffff";
+    document.getElementById("m").style.Color="#000000";
+}
+</script>
+
+</body>
+</html>
