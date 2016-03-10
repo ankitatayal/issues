@@ -10,6 +10,9 @@ body{
         box-shadow: 0px 5px #2c89b7;
 
     }
+    #arrow{
+    cursor: pointer;
+}
      #s1{
     font-size: 18px;
     color: #063c57;
@@ -54,6 +57,14 @@ body{
         height: 250px;
         margin: 5% 36% 0 36%;
         border:8px solid #43B4ED;
+    }
+    #user{
+    	
+    	display: none;
+    }
+    #user:hover
+    {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
         hr{ border: 0 none;
         height: 1px;
