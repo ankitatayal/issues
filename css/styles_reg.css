@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    background-color: #2d4259;
+}
+    #hd{
+        background-color: #20aae5;
+        width: 100%;
+        height: 8%;
+        position: relative;
+        box-shadow: 0px 4px #1894ca;
+padding-top: 13px;
+    }
+    #ft{
+        background-color: Black;
+        bottom: 0px;
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        padding-bottom: 3px;
+
+    }
+    #wlcm{ cursor: pointer;
+        background: linear-gradient(to bottom, #dc735d, #da6d57, #d86545, #d55a44) ;
+        border-radius: 4px;
+        height: 45px;
+        margin: 4% 40% 0 40%;
+        position: relative;
+        box-shadow: 0 0.5px 20px 0 #213142;
+    }
+   .c{
+    display: none;
+   }
+    #wlcm:hover,#user:hover{  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+    #user{
+        background-color: White;
+        border-radius: 2px;
+        position: relative;
+        height: 280px;
+        margin: 2% 40% 0 40%;
+        padding: 2px;
+        box-shadow: 0 0.5px 20px 0 #213142;
+    }
+#arrow{
+    cursor: pointer;
+}
+ 
+   /* .button:hover{
+        background-color: White;
+        color:black;
+    }
+     /*   .button:active{
+        background-color: White;
+        color:black;
+    }*/
+    hr{ border: 0 none;
+        height: 1px;
+        width: 90%;
+        background-color: #dcdcdc;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #inpt{
+        width: 87%;
+        height: 30px;
+        font-size: 15px;
+        border:none;
+        margin-left: 15px;
+    }
+   
+   .b3{ 
+    border-radius: 1px;
+    margin:9px 15px 0 15px;
+    align-items: center;
+        cursor: pointer;
+        background-color: White;
+        color: #4a4d4a;
+        font-size: 18px;
+        font-family: Calibri;
+        display: inline-block;
+        width: 90%;
+        height: 40px;
+        border: 1px solid #dcdcdc;
+        box-shadow: 4px 4px #d7d6d4;
+        outline: none;
+   }
+.b3:active{
+      background-color: white;
+  box-shadow: 4px 2px #666;
+  transform: translateY(2px);
+}
+ #s1{
+    font-size: 16px;
+    color: #063c57;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 90px;
+    width: 70px;
+    display: inline;
+    font-family: Ebrima;
+ }   
+ .disabled
+ {opacity: 0.6;
+cursor: not-allowed;
+ }
+ #check{
+    margin-left: 15px; 
+    font-size:20px;
+ }
+ #u1{ 
+    background-color: #6cb144;
+        width: 244px;
+        height: 44px;
+        border-radius: 4px;
+       padding-top: 2px;
+        margin: 13px 13px 13px 13px;
+        position: relative;
+ }
+ .female{
+    position: relative;
+    width: 117px;
+    height: 34px;
+    /*background-color: #6cb144;
+    color: White;*/
+    margin-top: 2px;
+    padding-top: 3px;
+    margin-left: 4px;
+    display: inline-block;
+    float: left;
+    font-family: Ebrima;
+    font-size: 15px;
+    /*border-radius: 4px  0 0 4px;*/
+    cursor: pointer;
+    background-color: white; color: black;  border:1px solid #5ea039; border-radius:4px
+ }
+  .male{
+    position: relative;
+    width: 118px;
+    height: 34px;
+    font-size: 15px;
+    background-color: #6cb144;
+    color: White;
+    margin-top: 2px;
+    padding-top: 3px;
+    margin-left: 0px;
+    float: left;
+    display: inline-block;
+    font-family: Ebrima;
+ border-radius: 0 4px 4px 0;
+ cursor: pointer;
+ }
+ @font-face{
+    font-family: "monofonto"; 
+    src:url('fonts/monofonto.ttf') format("truetype");
+ }

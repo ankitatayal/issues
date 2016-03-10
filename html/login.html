@@ -1,0 +1,51 @@
+
+<html>
+<head>
+	<title>Login Form</title>
+	<script src="jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#arrow").click(function(){
+        $("#user").slideToggle(1000);
+    });
+});
+</script>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="hd">
+    <h1 style="color: white; font-family: calibri; margin-left: 200px; padding-top: 15px; "><b>INNORAFT</b><span style="margin-left: 160px"><a href="reg1.html"><img src="1457438900_arrow-left-01.png"height="20px" width="20px" ></a></span>
+    <span id="s1">Login Form</span>
+    <span style=" padding-left:0; margin-left: 0px; margin-top:15px "><img id="arrow" src="1457443021_icon-arrow-down-b.png"  height="20px" width="20px" ></span>
+    <span style="margin-left: 90px"><a href="reg1.html"><img src="1457438874_arrow-right-01.png"height="20px" width="20px" ></a></span>
+    <span style="margin-left: 10%"> <img src="Twitter_logo_white.png" style="width: 20px; height: 20px"> </span>
+    <span style="margin-left: 2%; font-family: calibri; font-size: 30px;"><b>f</b></span>
+    <span style="margin-left: 2%"> <img src="wifi.png" style="width: 20px; height: 20px"> </span>
+    <span style="margin-left: 2%"> <img src="Mail.png" style="width: 40px; height: 20px"> </span></h1>
+</div> 
+<div id="user">
+	<center><p style="color: #4a4d4a; font-size: 18px; font-family: Calibri; padding: none;margin:8px;"><b>Login To Web App</b></p></center>
+	<hr>
+<form>
+</br>
+
+
+	 <input id="inpt" type="email" name="email" required autofocus placeholder="Username or Email"></input>
+	 </br>
+	 </br></br>
+	 <input id="inpt" type="password" required name="password" placeholder="Password"></input></br></br></br>
+	 <input id="check" type="checkbox" name="checkbox"><span style="font-size: 14px; color: Gray;">Remember me on this computer</span></input>
+	 <button id="login"><b>Login</b></button>
+</form></br>
+<center><p style="color: white; font-family: calibri; font-size: 12px; ">Forgot your password? <a href="" style="color: LightGrey; text-decoration: none;">Click here to reset it.</a></p></center>
+</div>
+
+
+<footer id="ft">
+     <center><h4 style="color: white; font-family: Calibri;">Copyright @2015</h4></center>
+ </footer> 
+</body>
+</html>
