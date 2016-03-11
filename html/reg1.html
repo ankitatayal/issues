@@ -34,6 +34,54 @@ $(document).ready(function(){
 
 
 </script>
+<script>
+
+$(document).ready(function(){
+$('#form1').submit(function() {
+   var error = 0;
+var password= $('#password').val();
+var email= $('#email').val();
+  if ($.trim(password).length <8  ) {
+     alert('Minimum password length required is 8');
+   }
+   if (!(password.match(/[A-Z]/))) {
+     alert('password should contain capital letter');
+   }
+   if (!(password.match(/[a-z]/))) {
+     alert('password should contain small letter');
+   }
+   if (!(password.match(/[0-9]/))) {
+     alert('password should contain a numeric value');
+   }
+
+
+   var atpos=email.indexOf("@");
+   var dotpos=email.lastIndexOf(".");
+
+   if(email=="")
+   {
+    alert("email can't b blank");
+   }
+   if(!(email)=="@")
+   {
+    alert("email should contain @");
+   }
+   if(atpos<1)
+   {
+    alert("there should be more than 1 letter before @");
+   }
+   if(dotpos-atpos<5)
+   {
+    alert("There should be more than 5 letters before '.'");}
+       if(error){
+       return false;
+   }else{
+       return true;
+   }
+    });
+});
+
+</script>
 <link rel="stylesheet" type="text/css" href="G:\html\issues\css\styles_reg.css">
 </head>
 <body onload="disableSubmit()">
@@ -52,13 +100,14 @@ $(document).ready(function(){
 <div id="wlcm" class="c">
     <center><p style="color: white; font-family: Ebrima; padding-top: 13px; font-size: 18px">Welcome</p></center>
 </div>
-<div id="user" class="c"> <form>  
+<div id="user" class="c">
+ <form id="form1">  
 <div id="u1">
 <div class="female" id="f" onclick="change()"><center><p style="margin-top: 8px;">Female</p></center></div> 
 <div class="male" id="m" onclick="change1()"><center><p style="margin-top: 8px;">Male</p></center></div> </div>
- <input id="inpt" type="email" name="email"   placeholder="Email address" style="margin-top: 15px;"></input>
+ <input id="email" type="text" name="email"   placeholder="Email address" style="margin-top: 15px;"></input>
  <hr>
-  <input id="inpt" type="password"  name="password"  placeholder="Password"></input>
+  <input id="password" type="password"  name="password"  placeholder="Password"></input>
 <hr></br>
 <input id="check" type="checkbox" name="checkbox" onchange="activateButton(this)"><span style="font-size: 12px; color: Gray;">I have read all terms and conditions.</span></input></br>
 <button id="submit" class="b3 disabled"><b>Create Account</b></button>

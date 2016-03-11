@@ -12,7 +12,54 @@ $(document).ready(function(){
     });
 });
 </script>
+<script>
 
+$(document).ready(function(){
+$('#form1').submit(function() {
+   var error = 0;
+var password= $('#password').val();
+var email= $('#email').val();
+  if ($.trim(password).length <8  ) {
+     alert('Minimum password length required is 8');
+   }
+   if (!(password.match(/[A-Z]/))) {
+     alert('password should contain capital letter');
+   }
+   if (!(password.match(/[a-z]/))) {
+     alert('password should contain small letter');
+   }
+   if (!(password.match(/[0-9]/))) {
+     alert('password should contain a numeric value');
+   }
+
+
+   var atpos=email.indexOf("@");
+   var dotpos=email.lastIndexOf(".");
+
+   if(email=="")
+   {
+    alert("email can't b blank");
+   }
+   if(!(email)=="@")
+   {
+    alert("email should contain @");
+   }
+   if(atpos<1)
+   {
+    alert("there should be more than 1 letter before @");
+   }
+   if(dotpos-atpos<5)
+   {
+    alert("There should be more than 5 letters before '.'");}
+       if(error){
+       return false;
+   }else{
+       return true;
+   }
+    });
+});
+
+</script>
 	<link rel="stylesheet" type="text/css" href="G:\html\issues\css\styles.css">
 </head>
 <body>
@@ -31,14 +78,14 @@ $(document).ready(function(){
 <div style="background-color: #f3f3f3; width: 366px ; height: 35px;margin-top: none;padding-top: 10px; border-bottom: 1px solid #cfcfcf">
 	<center><p style="color: #555555; font-size: 18px; font-family: Calibri; padding: none;margin-top:0;"><b>Login To Web App</b></p></center>
     </div>
-<form>
+<form id="form1">
 
 
 
-	 <input id="inpt" type="email" name="email"  placeholder="  Username or Email"></input>
+	 <input id="email" type="text" name="email"  placeholder="  Username or Email"></input>
 	 </br>
 	 </br>
-	 <input id="inpt" type="password" name="password" placeholder="  Password"></input>
+	 <input id="password" type="password" name="password" placeholder="  Password"></input>
 	 <input id="check" type="checkbox" name="checkbox"><span style="font-size: 13px; color: Gray; font-family: Ebrima">Remember me on this computer</span></input>
 	 <button id="login"><b>Login</b></button>
 </form></br>
